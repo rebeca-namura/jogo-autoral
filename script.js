@@ -10,7 +10,7 @@ const config = {
   physics: {
     default: 'arcade',
     arcade: {
-      gravity: { x: 0, y: 100 }, // isso aqui define a gravidade no eixo y
+      gravity: { x: 0, y: 200 }, // isso aqui define a gravidade no eixo y
       debug: true // isso aqui mostra a caixinha de colisão dos objetos
     }
   },
@@ -20,3 +20,4 @@ const config = {
 
 // cria a instância do jogo
 const game = new Phaser.Game(config);
+/*var rect = new Phaser.Geom.Rectangle(widthGame/2, heightGame/2, widthGame, heightGame);*/
