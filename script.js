@@ -11,7 +11,7 @@ const config = {
     default: 'arcade',
     arcade: {
       gravity: { x: 0, y: 200 }, // Define a gravidade no eixo y
-      debug: true // Mostra a caixinha de colisão dos objetos
+      debug: false // Mostra a caixinha de colisão dos objetos
     }
   },
   // Adiciona as cenas que serão usadas
