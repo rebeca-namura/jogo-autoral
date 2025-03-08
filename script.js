@@ -1,7 +1,7 @@
-const widthGame = 1920
-const heightGame = 1080
+const widthGame = 1920; // Largura do jogo
+const heightGame = 1080; // Altura do jogo
 
-// configurações iniciais do phaser como resolução, gravidade, cenas, etc
+// Configurações iniciais do Phaser como resolução, gravidade, cenas, etc.
 const config = {
   type: Phaser.AUTO,
   width: widthGame,
@@ -10,14 +10,16 @@ const config = {
   physics: {
     default: 'arcade',
     arcade: {
-      gravity: { x: 0, y: 200 }, // isso aqui define a gravidade no eixo y
-      debug: true // isso aqui mostra a caixinha de colisão dos objetos
+      gravity: { x: 0, y: 200 }, // Define a gravidade no eixo y
+      debug: true // Mostra a caixinha de colisão dos objetos
     }
   },
-  // isso adiciona as cenas que serão usadas
-  scene: [StartScene, GameScene1],
+  // Adiciona as cenas que serão usadas
+  scene: [StartScene, GameScene1, EndGame],
 };
 
-// cria a instância do jogo
+// Cria a instância do jogo
 const game = new Phaser.Game(config);
+
 /*var rect = new Phaser.Geom.Rectangle(widthGame/2, heightGame/2, widthGame, heightGame);*/
+
